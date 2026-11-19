@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sagar Nautiyal | Portfolio</title>
+  <meta name="description" content="Sagar Nautiyal, MCA student and developer who builds web apps, desktop tools and algorithm visualizers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top">Sagar Nautiyal</a>
+  <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav class="nav__links" id="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <div class="hero__text">
+      <p class="hero__role">MCA student &amp; developer, Dehradun</p>
+      <h1>I build software across the stack.</h1>
+      <p class="hero__sub">Web apps, desktop tools and algorithm visualizers, taken from first idea to something that works.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">See projects</a>
+        <a class="btn btn--ghost" href="mailto:nautiyalsagar1@gmail.com">Email me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Socialfy</h3>
+          <a class="link" href="https://github.com/sagar-nautiyal-1234/socialfy" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project__kind">Full-stack web app</p>
+        <p>A social media platform with user accounts, profiles, posts, likes and follow/unfollow.</p>
+        <p>Django handles the backend logic and database; the frontend is responsive and interactive, built with HTML, CSS and JavaScript.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Django</li><li>SQLite</li></ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Heart Disease Prediction System</h3>
+          <a class="link" href="https://github.com/sagar-nautiyal-1234/heart-model" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project__kind">Machine learning web app</p>
+        <p>A web app that predicts the likelihood of heart disease from medical inputs such as age, cholesterol and blood pressure, with results shown in real time through a clean Streamlit interface.</p>
+        <p>A Logistic Regression model, trained after preprocessing and feature selection, reached 85% accuracy on test data.</p>
+        <ul class="tags"><li>Python</li><li>Streamlit</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li></ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Packet Routing Simulator</h3>
+          <a class="link" href="https://github.com/sagar-nautiyal-1234/packet-routing-simulator" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project__kind">Algorithm visualizer</p>
+        <p>Draw your own graph and watch Dijkstra's and Bellman-Ford find paths in real time, side by side.</p>
+        <p>A Django backend serves dynamic vis.js rendering, with a responsive Tailwind UI built for easy comparison.</p>
+        <ul class="tags"><li>HTML</li><li>Tailwind CSS</li><li>JavaScript</li><li>vis.js</li><li>Django</li></ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>TCP Protocol Simulator</h3>
+          <a class="link" href="https://github.com/sagar-nautiyal-1234/tcp-protocol-simulator" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project__kind">Desktop app</p>
+        <p>A GUI application with an event-driven, modular design that animates a connection from handshake to teardown.</p>
+        <p>Built with threading and asynchronous delivery, so the animation reflects real timing, retries and flow control.</p>
+        <ul class="tags"><li>Python</li><li>Tkinter</li><li>Threading</li><li>Dataclasses</li></ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>LB//VIZ: Load Balancer Visualizer</h3>
+          <a class="link" href="https://github.com/sagar-nautiyal-1234/Load_Balancer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="project__kind">Interactive desktop app</p>
+        <p>A visual tool for seeing how a load balancer shares traffic. It runs real TCP servers on localhost, so every request is an actual connection, shown with animated packets, live load bars and an event log.</p>
+        <p>Switch between six algorithms live, kill and revive servers, change weights and send bursts. Health checks spot crashed servers and reroute traffic, and a new algorithm is just a small class added to a registry.</p>
+        <ul class="tags"><li>Python</li><li>Tkinter</li><li>Sockets</li><li>Threading</li><li>No external dependencies</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section section--peach" id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Languages</dt><dd>Python, HTML/CSS, JavaScript</dd></div>
+      <div><dt>Frameworks &amp; libraries</dt><dd>Django, Tailwind CSS, vis.js, Tkinter</dd></div>
+      <div><dt>Developer tools</dt><dd>Git, GitHub, Visual Studio Code, Jupyter Notebook, PyCharm</dd></div>
+      <div><dt>Databases</dt><dd>MySQL, SQLite</dd></div>
+    </dl>
+  </section>
+
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <ol class="timeline">
+      <li>
+        <span class="timeline__when">2026 to present</span>
+        <h3>MCA, 1st year</h3>
+        <p>Graphic Era University, Dehradun</p>
+        <p class="timeline__mark">Pursuing</p>
+      </li>
+      <li>
+        <span class="timeline__when">Aug 2023 to May 2026</span>
+        <h3>BCA</h3>
+        <p>Graphic Era University, Dehradun</p>
+        <p class="timeline__mark">8.23 / 10 CGPA</p>
+      </li>
+      <li>
+        <span class="timeline__when">Apr 2022 to May 2023</span>
+        <h3>Class 12 (CBSE)</h3>
+        <p>Manava Bharati India International School, Mussoorie</p>
+        <p class="timeline__mark">68.83%</p>
+      </li>
+      <li>
+        <span class="timeline__when">Apr 2020 to May 2021</span>
+        <h3>Class 10 (CBSE)</h3>
+        <p>Manava Bharati India International School, Mussoorie</p>
+        <p class="timeline__mark">83.33%</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section section--dark" id="experience">
+    <h2>Experience &amp; community</h2>
+    <div class="exp">
+      <article>
+        <h3>150+ LeetCode problems solved</h3>
+        <p>Steady practice in algorithms and problem solving.</p>
+        <!-- Replace with your real LeetCode profile -->
+        <a class="link link--light" href="https://leetcode.com/your-username" target="_blank" rel="noopener">LeetCode profile</a>
+      </article>
+      <article>
+        <h3>Volunteer, Jagat Bandhu Sewa Trust</h3>
+        <p class="exp__meta">2025</p>
+        <p>Helped with a book donation drive, cleanliness drives and health camps.</p>
+        <!-- Replace # with your NGO certificate URL -->
+        <a class="link link--light" href="#" target="_blank" rel="noopener">View certificate</a>
+      </article>
+      <article>
+        <h3>Computer Science teacher</h3>
+        <p class="exp__meta">Manava Bharati India International School, June to July 2026</p>
+        <p>Conducted sessions on Python, DBMS and Computer Networks for secondary and high school students.</p>
+        <!-- Replace # with your certificate URL -->
+        <a class="link link--light" href="#" target="_blank" rel="noopener">View certificate</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--peach" id="resume">
+    <h2>Resume</h2>
+    <p>My full resume as a PDF. Open it in a new tab, download it, or preview it here.</p>
+    <div class="resume__actions">
+      <a class="btn btn--primary" href="resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a class="btn btn--outline" href="resume.pdf" download="Sagar_Nautiyal_Resume.pdf">Download PDF</a>
+      <button class="btn btn--outline" id="preview-toggle" type="button" aria-expanded="false" aria-controls="resume-preview">Preview here</button>
+    </div>
+    <div class="resume__preview" id="resume-preview" hidden>
+      <iframe title="Resume preview" data-src="resume.pdf#view=FitH"></iframe>
+      <p class="resume__fallback">If the preview doesn't load, use <a class="link" href="resume.pdf" target="_blank" rel="noopener">View resume</a> instead.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p class="contact__lead">Open to internships and projects. The quickest way to reach me is email.</p>
+    <ul class="contact">
+      <li><a href="mailto:nautiyalsagar1@gmail.com">nautiyalsagar1@gmail.com</a></li>
+      
+      <li><a href="https://github.com/sagar-nautiyal-1234" target="_blank" rel="noopener">github.com/sagar-nautiyal-1234</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year">2026</span> Sagar Nautiyal</p>
+  <a href="#top">Back to top</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
